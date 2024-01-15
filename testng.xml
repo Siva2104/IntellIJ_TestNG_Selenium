@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
-
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/1925566/eclipse-workspace/maven_practise">
-       <classes>
+    <test name="Grouping Test">
 
-           <class name="tut1_Login"></class>
-           <class name="NewTest"></class>
-           <class name="OrderofTestExecutionInTestNG"></class>
-           <class name="tut_Prioritize"></class>
-       </classes>
-
+        <groups>
+            <run>
+                <include name="Sanity"/>
+                <include name="regression"/>
+            </run>
 
 
+
+        </groups>
+        <classes>
+            <class name="tut_grouping"/>
+
+        </classes>
     </test>
 </suite>
