@@ -1,0 +1,4 @@
+//Selenium Java  1.8 + testNG 7.5version
+* File >> project structure >> Upload the test NG Jar (manuaaly) >> restart
+*Error 54 :: Same version of java files should be used
+*installation of testng.xml >> file >> setting >> plugins >> testNg
