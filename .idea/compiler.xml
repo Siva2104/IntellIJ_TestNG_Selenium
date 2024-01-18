@@ -9,5 +9,9 @@
         <module name="maven_practise" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
+  </component>
+  <component name="JavacSettings">
+    <option name="GENERATE_NO_WARNINGS" value="true" />
   </component>
 </project>

@@ -1,7 +1,7 @@
 import org.testng.annotations.*;
 import org.testng.annotations.Test;
 
-public class OrderofTestExecutionInTestNG {
+public class OrderofTestExecutionInTestNGTest {
     // test case 1
     @Test
     public void testCase1() {

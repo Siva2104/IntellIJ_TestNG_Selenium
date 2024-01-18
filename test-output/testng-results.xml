@@ -2,34 +2,44 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-15T14:15:51 IST" name="Default suite" finished-at="2024-01-15T14:15:54 IST" duration-ms="2718">
+  <suite started-at="2024-01-18T18:20:34 IST" name="Parameterization" finished-at="2024-01-18T18:20:34 IST" duration-ms="69">
     <groups>
     </groups>
-    <test started-at="2024-01-15T14:15:51 IST" name="Default test" finished-at="2024-01-15T14:15:54 IST" duration-ms="2718">
-      <class name="tut_depedency">
-        <test-method signature="testCase1()[pri:1, instance:tut_depedency@20140db9]" started-at="2024-01-15T14:15:51 IST" name="testCase1" finished-at="2024-01-15T14:15:54 IST" duration-ms="2634" status="FAIL">
-          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+    <test started-at="2024-01-18T18:20:34 IST" name="Test" finished-at="2024-01-18T18:20:34 IST" duration-ms="69">
+      <class name="testng.parameter">
+        <test-method signature="Launch(java.lang.String)[pri:0, instance:testng.parameter@d86a6f]" started-at="2024-01-18T18:20:34 IST" name="Launch" finished-at="2024-01-18T18:20:34 IST" duration-ms="15" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://10.11.144.178:8107/home/login/1/]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
             <message>
-              <![CDATA[Unable to establish websocket connection to http://localhost:50619/devtools/browser/cb4d8497-185b-4a7a-84fd-96b0625f034b
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '01HW1889862', ip: '172.20.10.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: driver.version: ChromeDriver]]>
+              <![CDATA[org/openqa/selenium/interactions/HasTouchScreen]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:50619/devtools/browser/cb4d8497-185b-4a7a-84fd-96b0625f034b
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '01HW1889862', ip: '172.20.10.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
-at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
-at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:106)
-at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
-at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
-at java.base/java.util.Optional.map(Optional.java:260)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
-at tut_depedency.testCase1(tut_depedency.java:19)
+              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/interactions/HasTouchScreen
+at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1012)
+at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1012)
+at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+at testng.parameter.Launch(parameter.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -58,13 +68,18 @@ at org.testng.TestNG.run(TestNG.java:1082)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.interactions.HasTouchScreen
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+... 47 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase1 -->
-      </class> <!-- tut_depedency -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- Launch -->
+      </class> <!-- testng.parameter -->
+    </test> <!-- Test -->
+  </suite> <!-- Parameterization -->
 </testng-results>
