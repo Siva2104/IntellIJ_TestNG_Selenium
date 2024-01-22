@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
   <parameter name="url" value="https://10.11.144.178:8107/home/login/1/"></parameter>
     <classes>
-      <class name="testng.parameterTest"/>
+      <class name="src.newJava.tut_FindBy"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
