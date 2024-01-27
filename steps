@@ -7,3 +7,21 @@
 
 
 **** for installing openqa package download selenoi, stable version eg.4.16.1 >> import Jar
+
+
+########error Selenium Java 4.1.3 java.lang.NoClassDefFoundError: org/openqa/selenium/WebDriver
+
+You at least need to add these external JARS:
+
+selenium-api-4.1.3
+selenium-remote-driver-4.1.3
+selenium-chromium-driver-4.1.3
+selenium-chrome-driver-4.1.3
+(all in the folder 'lib')
+
+
+###eror SLF4J:Failed to load class "org.slf4j.impl.StaticLoggerBinder
+
+
+To solve this error, I checked if I had slf4j-api-1.7.36.jar file and I added slf4j-simple-1.7.36.jar. 
+I downloaded it from https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar
