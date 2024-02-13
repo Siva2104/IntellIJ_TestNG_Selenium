@@ -1,0 +1,8 @@
+step for POM File with PageFactory>>
+
+
+>>Create a BaseTest file with Driver setup and application URL
+>>Create a Login POM file with Web Elements and Each Webellement should have the individual method to perform actions.
+>>create a login test file with basetest >> create a object with POM file
+
+POM_file pomfile = new pom_file;
